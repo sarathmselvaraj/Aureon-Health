@@ -1,0 +1,138 @@
+
+/* =====================================================================
+   Aureon Health corporate blue refresh overrides
+   ===================================================================== */
+:root{
+  --ah-primary:#1f6feb;
+  --ah-primary-2:#0b4dbb;
+  --ah-primary-soft:#eaf2ff;
+  --ah-primary-ring:rgba(31,111,235,.18);
+  --ah-navy:#0e2444;
+  --ah-navy-2:#132f57;
+  --ah-bg:#f5f9ff;
+  --ah-surface:#ffffff;
+  --ah-border:#d7e3f3;
+  --ah-text:#0f2340;
+  --ah-muted:#53657a;
+  --bs-primary:#1f6feb;
+  --bs-primary-rgb:31,111,235;
+  --bs-link-color:#1f6feb;
+  --bs-link-hover-color:#0b4dbb;
+}
+html,body{background:linear-gradient(180deg,#f8fbff 0%,#eef4fb 100%)!important;color:var(--ah-text)!important}
+body{background-attachment:fixed}
+a,.text-primary{color:var(--ah-primary)!important}
+.text-heading,.navbar-brand-logo,.brand-wordmark strong,.brand-wordmark>span{color:var(--ah-text)!important}
+.brand-wordmark>span{opacity:.78}
+.brand-logo-mark{width:44px!important;height:44px!important;flex:0 0 44px!important;object-fit:contain}
+.footer-brand-lockup .brand-logo-mark{width:44px!important;height:44px!important;flex-basis:44px!important}
+.navbar-vitaharbor,.navbar-surebridge,.dashboard-topbar{background:rgba(255,255,255,.88)!important;border-bottom:1px solid rgba(14,36,68,.09)!important;backdrop-filter:blur(18px) saturate(150%)!important;-webkit-backdrop-filter:blur(18px) saturate(150%)!important;box-shadow:0 12px 34px rgba(16,36,61,.07)!important}
+.nav-link{color:var(--ah-text)!important;font-weight:650!important}
+.nav-link:hover,.nav-link.active{background:rgba(31,111,235,.10)!important;color:var(--ah-primary)!important}
+.home-dropdown-menu,.dropdown-menu{background:rgba(255,255,255,.97)!important;border:1px solid var(--ah-border)!important;box-shadow:0 24px 42px rgba(14,36,68,.10)!important}
+.btn-primary,.btn-vitaharbor-primary,.btn-surebridge-primary,.btn-nav-primary,.vh-action.primary,
+.nav-direction-group button.active,.vh-role-switch button.active,.btn-surebridge-secondary{
+  background:linear-gradient(135deg,var(--ah-primary),var(--ah-primary-2))!important;
+  border-color:var(--ah-primary-2)!important;
+  color:#fff!important;
+  box-shadow:0 10px 24px rgba(31,111,235,.23)!important;
+}
+.btn-primary:hover,.btn-vitaharbor-primary:hover,.btn-surebridge-primary:hover,.btn-nav-primary:hover,.vh-action.primary:hover,.btn-surebridge-secondary:hover{
+  background:linear-gradient(135deg,#3e86f6,#1254c4)!important;
+  border-color:#1254c4!important;
+  transform:translateY(-2px);
+  box-shadow:0 16px 32px rgba(31,111,235,.28)!important;
+}
+.btn-nav-outline,.btn-vitaharbor-outline,.btn-surebridge-outline,.btn-outline-primary,.nav-theme-btn,.vh-action:not(.primary),.vh-social button{
+  background:#fff!important;
+  border-color:#b8cbe4!important;
+  color:var(--ah-text)!important;
+}
+.btn-nav-outline:hover,.btn-vitaharbor-outline:hover,.btn-surebridge-outline:hover,.btn-outline-primary:hover,.nav-theme-btn:hover,.vh-action:not(.primary):hover,.vh-social button:hover{
+  background:var(--ah-primary-soft)!important;
+  border-color:var(--ah-primary)!important;
+  color:var(--ah-primary)!important;
+  transform:translateY(-1px);
+}
+.hero-badge,.bg-primary,.realtime-pill{background:linear-gradient(135deg,var(--ah-primary),var(--ah-primary-2))!important;color:#fff!important;border:0!important}
+.bg-secondary.text-primary,.badge.bg-secondary.text-primary,.badge.bg-primary-subtle,.badge.bg-info-subtle,.badge.bg-success-subtle,.badge.bg-warning-subtle,.badge.bg-danger-subtle,.badge.bg-secondary-subtle{
+  background:#edf4ff!important;color:#163b72!important;border:1px solid #d5e3ff!important
+}
+.badge{font-weight:700!important;letter-spacing:.03em}
+.hero-copy-glass,.vh-auth-card,.surebridge-card,.vitaharbor-card,.vh-panel,.vh-kpi{
+  background:rgba(255,255,255,.82)!important;
+  border:1px solid rgba(255,255,255,.72)!important;
+  box-shadow:0 18px 44px rgba(16,36,61,.10)!important;
+  backdrop-filter:blur(18px) saturate(140%)!important;
+  -webkit-backdrop-filter:blur(18px) saturate(140%)!important;
+}
+.hero-copy-glass h1,.hero-copy-glass h2,.hero-copy-glass p,.hero-copy-glass span,.hero-copy-glass .text-muted{color:#fff!important;text-shadow:0 3px 18px rgba(0,0,0,.24)!important}
+.hero-copy-glass{background:linear-gradient(180deg,rgba(9,28,54,.70),rgba(16,49,94,.52))!important;border-color:rgba(255,255,255,.24)!important}
+section.bg-primary.text-white.py-5, .bg-primary.text-white.py-5{
+  position:relative; isolation:isolate;
+  background-image:linear-gradient(130deg,rgba(8,27,52,.82),rgba(16,49,94,.72),rgba(31,111,235,.42)), url('../images/about-hq-building.jpg')!important;
+  background-size:cover!important; background-position:center!important;
+}
+section.bg-primary.text-white.py-5::before,.bg-primary.text-white.py-5::before{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.28)); z-index:-1}
+section.bg-primary.text-white.py-5 .container,.bg-primary.text-white.py-5 .container{position:relative;z-index:1}
+section.bg-primary.text-white.py-5 h1, section.bg-primary.text-white.py-5 h2, section.bg-primary.text-white.py-5 h3, section.bg-primary.text-white.py-5 p, .bg-primary.text-white.py-5 .badge{color:#fff!important;text-shadow:0 2px 12px rgba(0,0,0,.28)!important}
+.form-control,.form-select{border-color:#c5d6ea!important;color:var(--ah-text)!important;background:#fff!important}
+.form-control::placeholder,.form-select::placeholder{color:#66798f!important;opacity:1!important}
+.form-control:focus,.form-select:focus{border-color:var(--ah-primary)!important;box-shadow:0 0 0 .2rem var(--ah-primary-ring)!important}
+.vh-auth-card .form-label,.vh-auth-card h3{color:var(--ah-text)!important}
+.vh-auth-card p,.vh-auth-card .small,.vh-role-help{color:#5f7288!important}
+.vh-role-switch{background:rgba(247,250,255,.96)!important;border-color:#d4e0ef!important}
+.vh-role-switch button{color:#53657b!important}
+.nav-theme-btn{display:grid!important;place-items:center;width:40px;height:40px;border-radius:12px!important}
+.vh-compare-section{background:linear-gradient(180deg,#f7fbff,#eef4fb)!important}
+.vh-compare-scroll{background:#fff!important;border:1px solid #d5e2f0!important}
+.vh-compare-table, .vh-compare-table td, .vh-compare-table th{color:var(--ah-text)!important}
+.vh-compare-table thead th{background:linear-gradient(135deg,var(--ah-navy),var(--ah-primary-2))!important;color:#fff!important}
+.vh-compare-table tbody th{background:#f2f7ff!important;color:#24436d!important;font-weight:700}
+.vh-compare-table .is-selected{background:#eef4ff!important;color:var(--ah-text)!important;box-shadow:inset 0 0 0 1px var(--ah-primary)}
+#compare-floating-bar{background:linear-gradient(135deg,var(--ah-primary),var(--ah-primary-2))!important;color:#fff!important}
+#compare-count{color:#fff!important}
+.footer-vitaharbor{background:linear-gradient(135deg,#0c1f39,#16345e 56%,#1d4c89)!important}
+.footer-vitaharbor,.footer-vitaharbor p,.footer-vitaharbor span,.footer-vitaharbor a{color:#dbe6f7!important}
+.footer-vitaharbor h6,.footer-vitaharbor .brand-wordmark strong{color:#fff!important}
+.dashboard-sidebar{background:linear-gradient(180deg,#0d2241,#16365f 62%,#1f4b85)!important}
+.dashboard-nav-link:hover,.dashboard-nav-link.active{background:rgba(31,111,235,.18)!important;color:#fff!important}
+.dashboard-sidebar-header .brand-logo-mark{background:#fff!important;border-radius:12px!important;padding:4px!important}
+/* consistent overlay text visibility */
+[class*="hero"] .lead, [class*="hero"] p.text-muted, section.bg-primary .text-white-50{opacity:1!important}
+.overlay-readable,.hero-copy-glass,.vh-panel-on-image{color:#fff!important}
+/* dark mode */
+html[data-theme="dark"] body.dark-mode, body.dark-mode{background:#071523!important;background-image:radial-gradient(circle at 12% 12%,rgba(31,111,235,.16),transparent 26%),radial-gradient(circle at 86% 11%,rgba(46,132,255,.11),transparent 22%),linear-gradient(180deg,#071523,#0a1b2e)!important;color:#eef5ff!important}
+html[data-theme="dark"] .navbar-vitaharbor,html[data-theme="dark"] .navbar-surebridge,html[data-theme="dark"] .dashboard-topbar,body.dark-mode .navbar-vitaharbor,body.dark-mode .navbar-surebridge,body.dark-mode .dashboard-topbar{background:rgba(8,22,38,.88)!important;border-bottom-color:rgba(121,160,214,.20)!important}
+html[data-theme="dark"] .nav-link,html[data-theme="dark"] .navbar-brand-logo,body.dark-mode .nav-link,body.dark-mode .navbar-brand-logo,body.dark-mode .text-heading{color:#f5f9ff!important}
+html[data-theme="dark"] .nav-link:hover,html[data-theme="dark"] .nav-link.active,body.dark-mode .nav-link:hover,body.dark-mode .nav-link.active{background:rgba(31,111,235,.16)!important;color:#8dc1ff!important}
+html[data-theme="dark"] .nav-theme-btn,html[data-theme="dark"] .btn-nav-outline,html[data-theme="dark"] .btn-vitaharbor-outline,html[data-theme="dark"] .btn-surebridge-outline,html[data-theme="dark"] .btn-outline-primary,html[data-theme="dark"] .nav-direction-group,html[data-theme="dark"] .vh-action:not(.primary),html[data-theme="dark"] .vh-social button,
+body.dark-mode .nav-theme-btn,body.dark-mode .btn-nav-outline,body.dark-mode .btn-vitaharbor-outline,body.dark-mode .btn-surebridge-outline,body.dark-mode .btn-outline-primary,body.dark-mode .nav-direction-group,body.dark-mode .vh-action:not(.primary),body.dark-mode .vh-social button{background:#10233b!important;border-color:#38557a!important;color:#eef5ff!important}
+html[data-theme="dark"] .surebridge-card,html[data-theme="dark"] .vitaharbor-card,html[data-theme="dark"] .vh-panel,html[data-theme="dark"] .vh-kpi,html[data-theme="dark"] .vh-auth-card,
+body.dark-mode .surebridge-card,body.dark-mode .vitaharbor-card,body.dark-mode .vh-panel,body.dark-mode .vh-kpi,body.dark-mode .vh-auth-card{background:rgba(14,30,49,.84)!important;border-color:rgba(255,255,255,.10)!important;color:#eef5ff!important}
+html[data-theme="dark"] .text-muted, body.dark-mode .text-muted, body.dark-mode p, body.dark-mode li{color:#bfd0e2!important}
+html[data-theme="dark"] .form-control,html[data-theme="dark"] .form-select, body.dark-mode .form-control, body.dark-mode .form-select{background:#0d2036!important;border-color:#3a587f!important;color:#f6fbff!important}
+html[data-theme="dark"] .form-control::placeholder,html[data-theme="dark"] .form-select::placeholder, body.dark-mode .form-control::placeholder, body.dark-mode .form-select::placeholder{color:#9bb1ca!important}
+html[data-theme="dark"] .vh-role-switch, body.dark-mode .vh-role-switch{background:#0f2139!important;border-color:#375478!important}
+html[data-theme="dark"] .vh-role-switch button, body.dark-mode .vh-role-switch button{color:#d8e5f5!important}
+html[data-theme="dark"] .vh-role-help, body.dark-mode .vh-role-help{color:#b7c9dc!important}
+html[data-theme="dark"] .badge.bg-secondary.text-primary,html[data-theme="dark"] .badge.bg-primary-subtle,html[data-theme="dark"] .badge.bg-info-subtle,html[data-theme="dark"] .badge.bg-success-subtle,html[data-theme="dark"] .badge.bg-warning-subtle,html[data-theme="dark"] .badge.bg-danger-subtle,html[data-theme="dark"] .badge.bg-secondary-subtle,
+body.dark-mode .badge.bg-secondary.text-primary,body.dark-mode .badge.bg-primary-subtle,body.dark-mode .badge.bg-info-subtle,body.dark-mode .badge.bg-success-subtle,body.dark-mode .badge.bg-warning-subtle,body.dark-mode .badge.bg-danger-subtle,body.dark-mode .badge.bg-secondary-subtle{background:#183657!important;color:#dce9ff!important;border-color:#385f8f!important}
+html[data-theme="dark"] .vh-compare-section, body.dark-mode .vh-compare-section{background:linear-gradient(180deg,#0b1829,#102038)!important}
+html[data-theme="dark"] .vh-compare-scroll, body.dark-mode .vh-compare-scroll{background:#0e1f33!important;border-color:rgba(255,255,255,.10)!important}
+html[data-theme="dark"] .vh-compare-table,html[data-theme="dark"] .vh-compare-table td,html[data-theme="dark"] .vh-compare-table th,
+body.dark-mode .vh-compare-table,body.dark-mode .vh-compare-table td,body.dark-mode .vh-compare-table th{color:#edf5ff!important;border-color:rgba(255,255,255,.08)!important}
+html[data-theme="dark"] .vh-compare-table tbody th, body.dark-mode .vh-compare-table tbody th{background:#12263f!important;color:#d7e7ff!important}
+html[data-theme="dark"] .vh-compare-table .is-selected, body.dark-mode .vh-compare-table .is-selected{background:#183657!important;color:#fff!important}
+/* auth pages: keep controls visible on mobile */
+@media(max-width:1199.98px){.nav-actions-container{width:100%;justify-content:flex-start}.nav-actions-container .btn-nav-outline,.nav-actions-container .btn-nav-primary{flex:1 1 auto;min-height:42px}}
+@media(max-width:767.98px){.nav-actions-container{gap:.5rem!important}.nav-direction-group{order:1}.nav-theme-btn{order:2}.nav-actions-container .btn-nav-outline,.nav-actions-container .btn-nav-primary{padding:.62rem .9rem;font-size:.88rem}.brand-wordmark>span{display:none}}
+
+
+.text-warning,.dropdown-icon-box.text-warning,.stat-value.text-warning,.text-info,.text-success{color:var(--ah-primary)!important}
+.bg-warning-subtle,.bg-info-subtle,.bg-success-subtle{background:#edf4ff!important;color:#163b72!important}
+.badge.bg-warning,.badge.bg-warning.text-dark,.badge.bg-warning-subtle.text-dark,.badge.bg-warning-subtle,.badge.bg-info-subtle.text-info,.badge.bg-success-subtle.text-success{background:#edf4ff!important;color:#163b72!important;border:1px solid #d5e3ff!important}
+.btn-warning,.btn-outline-warning{background:linear-gradient(135deg,var(--ah-primary),var(--ah-primary-2))!important;border-color:var(--ah-primary-2)!important;color:#fff!important}
+.btn-outline-warning:hover,.btn-warning:hover{background:linear-gradient(135deg,#3e86f6,#1254c4)!important;border-color:#1254c4!important;color:#fff!important}
+html[data-theme="dark"] .text-warning, html[data-theme="dark"] .text-info, html[data-theme="dark"] .text-success, body.dark-mode .text-warning, body.dark-mode .text-info, body.dark-mode .text-success{color:#8dc1ff!important}
+html[data-theme="dark"] .bg-warning-subtle,html[data-theme="dark"] .bg-info-subtle,html[data-theme="dark"] .bg-success-subtle,body.dark-mode .bg-warning-subtle,body.dark-mode .bg-info-subtle,body.dark-mode .bg-success-subtle{background:#183657!important;color:#dce9ff!important}

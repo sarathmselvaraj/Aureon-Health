@@ -1,0 +1,51 @@
+/* ==========================================================================
+   SureBridge Insurance Brokerage - RTL (Right-to-Left) Stylesheet
+   ========================================================================== */
+
+[dir="rtl"] body {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .ms-auto {
+  margin-left: unset !important;
+  margin-right: auto !important;
+}
+
+[dir="rtl"] .me-auto {
+  margin-right: unset !important;
+  margin-left: auto !important;
+}
+
+[dir="rtl"] .me-1, [dir="rtl"] .me-2, [dir="rtl"] .me-3, [dir="rtl"] .me-4 {
+  margin-right: unset !important;
+}
+
+[dir="rtl"] .floating-badge-1 {
+  left: unset;
+  right: -20px;
+}
+
+[dir="rtl"] .floating-badge-2 {
+  right: unset;
+  left: -15px;
+}
+
+[dir="rtl"] .footer-links-list a:hover {
+  padding-left: 0;
+  padding-right: 4px;
+}
+
+[dir="rtl"] .form-select {
+  background-position: left 0.75rem center;
+}
+
+[dir="rtl"] .accordion-button::after {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .btn i {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
