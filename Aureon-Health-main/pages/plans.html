@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Compare Insurance Plans | Aureon Health Brokerage</title>
+<meta content="Search and compare top life and health insurance plans from 40+ national carriers. Filter by monthly premium, coverage limits, and benefits." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+
+
+
+<link href="../assets/images/favicon.svg" rel="icon" type="image/svg+xml"/><link href="../assets/css/aureon.bundle.css" rel="stylesheet"/></head>
+<body class="has-public-navbar aureon-plans">
+<!-- TOP UTILITY STRIP -->
+<!-- NAVIGATION BAR -->
+<nav class="navbar navbar-expand-lg navbar-surebridge sticky-top">
+<div class="container-fluid px-3 px-xl-4">
+<a class="navbar-brand navbar-brand-logo" href="../index.html">
+<img alt="Aureon Health logo" class="brand-logo-mark" src="../assets/images/aureon-health-mark.svg"/>
+<span class="brand-wordmark"><strong>Aureon Health</strong><span>Insurance</span></span></a>
+<button aria-controls="surebridgeNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler border-0 shadow-none" data-bs-target="#surebridgeNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="surebridgeNav">
+<ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
+<!-- Home Dropdown (ONLY DROPDOWN ON THE NAVBAR) -->
+<li class="nav-item dropdown">
+<button aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="homeDropdown" type="button">Home</button>
+<ul aria-labelledby="homeDropdown" class="dropdown-menu border-0 shadow-lg p-2 home-dropdown-menu">
+<li>
+<a class="dropdown-item p-2 rounded-3" href="../index.html">
+<div>
+<div class="fw-bold text-heading" style="font-size: 0.92rem;">Personal &amp; Family Insurance</div>
+<small class="text-muted d-block" style="font-size: 0.78rem;">Life, Health Insurance &amp; Family Protection</small>
+</div>
+</a>
+</li>
+<li>
+<a class="dropdown-item p-2 rounded-3" href="../home-2.html">
+<div>
+<div class="fw-bold text-heading" style="font-size: 0.92rem;">Corporate &amp; Group Benefits</div>
+<small class="text-muted d-block" style="font-size: 0.78rem;">Group Health, Disability &amp; Business Shield</small>
+</div>
+</a>
+</li>
+</ul>
+</li>
+<!-- Direct User-Friendly Links (NO DROPDOWNS) -->
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+<li class="nav-item"><a class="nav-link active" href="plans.html">Plans</a></li>
+<li class="nav-item"><a class="nav-link" href="claims.html">Claims</a></li>
+<li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+<div class="nav-actions-container d-flex align-items-center gap-2 mt-3 mt-lg-0">
+<!-- Direction Controls (LTR / RTL) -->
+<div aria-label="Direction Selector" class="nav-direction-group" role="group">
+<button class="btn-ltr active" title="Switch to Left-to-Right" type="button">LTR</button>
+<button class="btn-rtl" title="Switch to Right-to-Left" type="button">RTL</button>
+</div>
+<!-- Theme Toggle Button -->
+<button aria-label="Toggle Theme" class="nav-theme-btn theme-toggle-btn" title="Toggle Light/Dark Mode" type="button">
+<i class="bi bi-moon-stars-fill"></i>
+</button>
+<a class="btn-nav-outline vh-auth-guest" href="../pages/login.html"><i class="bi bi-box-arrow-in-right"></i><span>Sign In</span></a><a class="btn-nav-primary vh-auth-guest" href="../pages/register.html"><i class="bi bi-person-plus"></i><span>Sign Up</span></a><a class="btn-nav-primary vh-auth-user d-none" data-vh-profile-link="" href="../dashboard/profile.html"><i class="bi bi-person-circle"></i><span>Profile</span></a></div>
+</div>
+</div>
+</nav>
+<!-- BREADCRUMB HERO -->
+<section class="bg-primary text-white py-5">
+<div class="container">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb mb-2">
+<li class="breadcrumb-item"><a class="text-white-50" href="../index.html">Home</a></li>
+<li aria-current="page" class="breadcrumb-item active text-secondary">Compare Plans</li>
+</ol>
+</nav>
+<h1 class="fw-bold text-white mb-2">Compare Insurance Plans</h1>
+<p class="lead text-white-50 mb-0">Use filters below to find policies that match your household budget and coverage needs.</p>
+</div>
+</section>
+<!-- PLAN BROWSER WITH FILTERS -->
+<section class="section-padding">
+<div class="container">
+<div class="row g-4">
+<!-- Sidebar Filters -->
+<div class="col-lg-3">
+<div class="surebridge-card p-4">
+<h5 class="fw-bold mb-3"><i class="bi bi-funnel me-2"></i> Filter Plans</h5>
+<div class="mb-4">
+<label class="form-label small fw-bold">Insurance Type</label>
+<select class="form-select" id="filter-insurance-type">
+<option selected="" value="all">All Types</option>
+<option value="life">Term Life</option>
+<option value="family">Family Protection</option>
+<option value="health">Health Insurance</option>
+<option value="critical">Critical Illness</option>
+</select>
+</div>
+<div class="mb-4">
+<label class="form-label small fw-bold">Carrier Provider</label>
+<select class="form-select" id="filter-carrier">
+<option selected="" value="all">All Insurers</option>
+<option value="northstar">Northstar Life</option>
+<option value="eversure">EverSure</option>
+<option value="bluepeak">BluePeak Health</option>
+<option value="guardianpath">GuardianPath</option>
+</select>
+</div>
+<div class="mb-4">
+<div class="d-flex justify-content-between mb-1">
+<label class="form-label small fw-bold mb-0">Max Monthly Premium</label>
+<span class="small fw-bold text-primary" id="price-range-value">₹4,000/mo</span>
+</div>
+<input class="form-range" id="filter-max-price" max="5000" min="500" step="250" type="range" value="4000"/>
+</div>
+<button class="btn btn-outline-secondary w-100 btn-sm" id="reset-plan-filters" type="button"><i class="bi bi-arrow-counterclockwise me-1"></i> Reset Filters</button>
+</div>
+</div>
+<!-- Plan Grid Cards -->
+<div class="col-lg-9">
+<div class="row g-4" id="plans-container">
+<!-- Plan Card 1 -->
+<div class="col-md-6 plan-card-item" data-carrier="northstar" data-price="1250" data-type="life">
+<div class="plan-card h-100 p-0 overflow-hidden">
+<img alt="Term Life" class="w-100" src="../assets/images/plan-term-life.webp" style="height: 140px; object-fit: cover;"/>
+<div class="p-4">
+<div class="form-check mb-2">
+<input class="form-check-input plan-compare-checkbox" data-plan-id="1" id="chk1" type="checkbox" value="1"/>
+<label class="form-check-label small fw-bold text-muted" for="chk1">Add to Compare</label>
+</div>
+<div class="d-flex align-items-center justify-content-between mb-2">
+<span class="badge bg-primary-subtle text-primary">TERM LIFE</span>
+<span class="carrier-name-pill">Northstar Life</span>
+</div>
+<h4 class="fw-bold mb-1">SecureLife Term 20</h4>
+<div class="plan-price-tag mb-3">₹1,250 <span>/ month</span></div>
+<ul class="feature-check-list">
+<li><i class="bi bi-check-circle-fill"></i> ₹1 Crore Level Cover</li>
+<li><i class="bi bi-check-circle-fill"></i> 20-Year Rate Guarantee</li>
+<li><i class="bi bi-check-circle-fill"></i> Terminal Illness Acceleration</li>
+</ul>
+<a class="btn btn-surebridge-outline w-100 mt-auto" href="plans.html#compare-plans">View Details</a>
+</div>
+</div>
+</div>
+<!-- Plan Card 2 -->
+<div class="col-md-6 plan-card-item" data-carrier="eversure" data-price="1850" data-type="family">
+<div class="plan-card featured h-100 p-0 overflow-hidden">
+<img alt="Family Shield" class="w-100" src="../assets/images/plan-family-shield.webp" style="height: 140px; object-fit: cover;"/>
+<div class="p-4">
+<div class="form-check mb-2">
+<input class="form-check-input plan-compare-checkbox" data-plan-id="2" id="chk2" type="checkbox" value="2"/>
+<label class="form-check-label small fw-bold text-muted" for="chk2">Add to Compare</label>
+</div>
+<div class="d-flex align-items-center justify-content-between mb-2">
+<span class="badge bg-success-subtle text-success">FAMILY SHIELD</span>
+<span class="carrier-name-pill">EverSure</span>
+</div>
+<h4 class="fw-bold mb-1">FamilyShield Premier</h4>
+<div class="plan-price-tag mb-3">₹1,850 <span>/ month</span></div>
+<ul class="feature-check-list">
+<li><i class="bi bi-check-circle-fill"></i> ₹10 Lakh Combined Benefit</li>
+<li><i class="bi bi-check-circle-fill"></i> Critical Illness Rider</li>
+<li><i class="bi bi-check-circle-fill"></i> Children Rider Included</li>
+</ul>
+<a class="btn btn-surebridge-primary w-100 mt-auto" href="plans.html#compare-plans">Select Plan</a>
+</div>
+</div>
+</div>
+<!-- Plan Card 3 -->
+<div class="col-md-6 plan-card-item" data-carrier="bluepeak" data-price="3499" data-type="health">
+<div class="plan-card h-100 p-0 overflow-hidden">
+<img alt="Health Insurance" class="w-100" src="../assets/images/plan-health-ppo.webp" style="height: 140px; object-fit: cover;"/>
+<div class="p-4">
+<div class="form-check mb-2">
+<input class="form-check-input plan-compare-checkbox" data-plan-id="3" id="chk3" type="checkbox" value="3"/>
+<label class="form-check-label small fw-bold text-muted" for="chk3">Add to Compare</label>
+</div>
+<div class="d-flex align-items-center justify-content-between mb-2">
+<span class="badge bg-info-subtle text-info">HEALTH PPO</span>
+<span class="carrier-name-pill">BluePeak Health</span>
+</div>
+<h4 class="fw-bold mb-1">HealthCare Choice PPO</h4>
+<div class="plan-price-tag mb-3">₹3,499 <span>/ month</span></div>
+<ul class="feature-check-list">
+<li><i class="bi bi-check-circle-fill"></i> ₹10 Lakh Sum Insured</li>
+<li><i class="bi bi-check-circle-fill"></i> Pan-India Specialist Network</li>
+<li><i class="bi bi-check-circle-fill"></i> 24/7 Telehealth Included</li>
+</ul>
+<a class="btn btn-surebridge-outline w-100 mt-auto" href="plans.html#compare-plans">View Details</a>
+</div>
+</div>
+</div>
+<!-- Plan Card 4 -->
+<div class="col-md-6 plan-card-item" data-carrier="guardianpath" data-price="1499" data-type="critical">
+<div class="plan-card h-100 p-0 overflow-hidden">
+<img alt="Critical Illness" class="w-100" src="../assets/images/plan-critical-illness.webp" style="height: 140px; object-fit: cover;"/>
+<div class="p-4">
+<div class="form-check mb-2">
+<input class="form-check-input plan-compare-checkbox" data-plan-id="4" id="chk4" type="checkbox" value="4"/>
+<label class="form-check-label small fw-bold text-muted" for="chk4">Add to Compare</label>
+</div>
+<div class="d-flex align-items-center justify-content-between mb-2">
+<span class="badge bg-warning-subtle text-dark">CRITICAL ILLNESS</span>
+<span class="carrier-name-pill">GuardianPath</span>
+</div>
+<h4 class="fw-bold mb-1">Guardian Cancer Cash</h4>
+<div class="plan-price-tag mb-3">₹1,499 <span>/ month</span></div>
+<ul class="feature-check-list">
+<li><i class="bi bi-check-circle-fill"></i> ₹15 Lakh Direct Cash Benefit</li>
+<li><i class="bi bi-check-circle-fill"></i> Instant Approval Without Exam</li>
+<li><i class="bi bi-check-circle-fill"></i> No Usage Restrictions</li>
+</ul>
+<a class="btn btn-surebridge-outline w-100 mt-auto" href="plans.html#compare-plans">View Details</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FLOATING COMPARE BAR -->
+<section class="section-padding vh-compare-section" id="compare-plans">
+<div class="container">
+<div class="text-center mx-auto mb-4" style="max-width:760px">
+<span class="section-kicker">SIDE-BY-SIDE COMPARISON</span>
+<h2 class="fw-semibold mb-2">Compare coverage without leaving the Plans page</h2>
+<p class="text-muted mb-0">Review monthly cost, coverage, best-fit profile and included benefits in one place. Select plan cards above to highlight the options you care about most.</p>
+</div>
+<div class="vh-compare-scroll">
+<table class="table vh-compare-table align-middle mb-0">
+<thead><tr><th>Feature</th><th data-compare-plan="1">SecureLife Term 20</th><th data-compare-plan="2">FamilyShield Premier</th><th data-compare-plan="3">HealthCare Choice PPO</th><th data-compare-plan="4">Guardian Cancer Cash</th></tr></thead>
+<tbody>
+<tr><th>Carrier</th><td data-compare-plan="1">Northstar Life</td><td data-compare-plan="2">EverSure</td><td data-compare-plan="3">BluePeak Health</td><td data-compare-plan="4">GuardianPath</td></tr>
+<tr><th>Plan type</th><td data-compare-plan="1">Term Life</td><td data-compare-plan="2">Family Protection</td><td data-compare-plan="3">Health Insurance</td><td data-compare-plan="4">Critical Illness</td></tr>
+<tr><th>From / month</th><td data-compare-plan="1"><strong>₹1,250</strong></td><td data-compare-plan="2"><strong>₹1,850</strong></td><td data-compare-plan="3"><strong>₹3,499</strong></td><td data-compare-plan="4"><strong>₹1,499</strong></td></tr>
+<tr><th>Core coverage</th><td data-compare-plan="1">₹1 Cr level cover</td><td data-compare-plan="2">₹10 Lakh combined benefit</td><td data-compare-plan="3">Low-deductible nationwide PPO</td><td data-compare-plan="4">₹15 Lakh direct cash benefit</td></tr>
+<tr><th>Best for</th><td data-compare-plan="1">Income replacement</td><td data-compare-plan="2">Growing households</td><td data-compare-plan="3">Everyday medical access</td><td data-compare-plan="4">Financial shock protection</td></tr>
+<tr><th>Advisor action</th><td data-compare-plan="1"><a class="btn btn-sm btn-outline-primary" href="login.html">Start application</a></td><td data-compare-plan="2"><a class="btn btn-sm btn-outline-primary" href="login.html">Start application</a></td><td data-compare-plan="3"><a class="btn btn-sm btn-outline-primary" href="login.html">Start application</a></td><td data-compare-plan="4"><a class="btn btn-sm btn-outline-primary" href="login.html">Start application</a></td></tr>
+</tbody></table>
+</div>
+<div class="d-flex flex-wrap gap-2 justify-content-center mt-4"><a class="btn btn-vitaharbor-primary" href="contact.html">Ask an advisor to compare for me</a><a class="btn btn-outline-primary" href="pricing.html">See advisory pricing</a></div>
+</div></section><div class="position-fixed bottom-0 start-50 translate-middle-x bg-primary text-white p-3 rounded-top-4 shadow-lg d-none" id="compare-floating-bar" style="z-index: 1050; min-width: 320px;">
+<div class="d-flex align-items-center justify-content-between gap-3">
+<div>
+<strong class="fs-5" id="compare-count">0</strong> plans selected</div>
+<button class="btn btn-surebridge-secondary btn-sm fw-bold" id="btn-open-compare" type="button">Compare Below <i class="bi bi-arrow-down"></i></button>
+</div>
+</div>
+<!-- FOOTER -->
+<footer class="aureon-footer footer-vitaharbor">
+<div class="container">
+<div class="row g-4 g-xl-5 align-items-start">
+<div class="col-lg-4">
+<a class="footer-brand-lockup mb-3" href="../index.html"><img alt="Aureon Health logo" class="brand-logo-mark" src="../assets/images/aureon-health-mark.svg"/><span class="brand-wordmark"><strong>Aureon Health</strong><span>Independent Insurance Guidance</span></span></a>
+<p class="small pe-lg-4">Clear life and health insurance comparisons, claims assistance, renewal reminders and a secure portal for policy management.</p>
+<div class="footer-socials"><a aria-label="Facebook" href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-facebook"></i></a><a aria-label="LinkedIn" href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-linkedin"></i></a><a aria-label="Instagram" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-instagram"></i></a><a aria-label="X" href="https://x.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-twitter-x"></i></a></div>
+</div>
+<div class="col-6 col-md-3 col-lg-2"><h5>Explore</h5><ul class="footer-links"><li><a href="../pages/about.html">About</a></li><li><a href="../pages/services.html">Services</a></li><li><a href="../pages/plans.html">Plans</a></li><li><a href="../pages/blog.html">Insights</a></li></ul></div>
+<div class="col-6 col-md-3 col-lg-2"><h5>Support</h5><ul class="footer-links"><li><a href="../pages/claims.html">Claims Assistance</a></li><li><a href="../pages/faq.html">FAQ</a></li><li><a href="../pages/contact.html">Contact</a></li><li><a href="../pages/login.html">Client Sign In</a></li></ul></div>
+<div class="col-md-6 col-lg-4"><div class="newsletter-card"><h5 class="mb-2">Health &amp; Policy Updates</h5><p class="small mb-3">Get practical coverage tips, renewal reminders and new plan updates in your inbox.</p><form data-aureon-newsletter="" novalidate=""><label class="visually-hidden" for="newsletter-1094">Email address</label><div class="newsletter-row"><input aria-label="Email address" class="form-control" id="newsletter-1094" placeholder="Email address" required="" type="email"/><button class="btn btn-vitaharbor-primary" type="submit">Subscribe</button></div><div aria-live="polite" class="newsletter-status small mt-2"></div></form></div></div>
+</div>
+<div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"><span class="small">© 2026 Aureon Health Services. Demo template experience.</span><div class="d-flex flex-wrap justify-content-center gap-3"><a href="../pages/contact.html">Privacy &amp; Support</a><a href="../pages/about.html#faq">Help Centre</a></div></div>
+</div></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="../assets/js/aureon.bundle.js"></script></body>
+</html>
